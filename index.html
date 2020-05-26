@@ -3,39 +3,49 @@
   <style>
     .about {
       background: LightSkyBlue;
-      grid-area: header1;
+      grid-area: 1/1/2/2;
     }
     .store {
       background: LightSalmon;
-      grid-area: header2;
+      grid-area: 1/2/2/3;
     }
     .gmailLink {
       background: PaleTurquoise;
-      grid-area: header3;
+      grid-area: 1/4/2/5;
     }
     .images {
       background: LightPink;
-      grid-area: header4;
+      grid-area: 1/5/2/6;
+    }
+    .menu {
+      grid-area: 1/6/2/7;
     }
     .userIcon {
-      background: PaleGreen;
-      grid-area: header5;
+      grid-area: 1/7/2/8;
+    }
+    .googleLogo {
+      grid-area: 2/3/3/4;
+    }
+    .searchBar {
+      grid-area: 3/3/4/4;
     }
 
     .container {
-      font-size: 40px;
+      font-size: 20px;
       min-height: 300px;
       width: 100%;
       background: white;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 5fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-gap: 10px;
-      grid-template-areas:
-        "header1 header2 . . header3 header4 header5"
+
+      /*grid-template-areas:
+        "header header header header header header header"
         "content"
         "footer footer footer footer footer footer footer"
         "footer2 footer2 footer2";
+        */
     }
   </style>
 
@@ -49,9 +59,22 @@
     <div class="container">
       <div class="about">About</div>
       <div class="store">Store</div>
-      <div class="gmailLink">3</div>
-      <div class="images">4</div>
-      <div class="userIcon">5</div>
+      <div class="gmailLink">Gmail</div>
+      <div class="images">Images</div>
+      <div class="menu">
+        <img src="menu-icon.png" alt="Menu Icon" width="50" height="50" />
+      </div>
+      <div class="userIcon">
+        <img src="icon.png" alt="User Icon" width="50" height="50" />
+      </div>
+      <div class="googleLogo">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        />
+      </div>
+      <div class="searchBar">
+        <input type="search" name="search-bar" id="" />
+      </div>
     </div>
     <!--
       <div class="google-logo">
